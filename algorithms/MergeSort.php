@@ -1,19 +1,7 @@
 <?php
 
-class MergeSort
+class MergeSort extends Sort
 {
-    private $array = [];
-
-    public function __construct(array $array)
-    {
-        $this->array = $array;
-    }
-
-    public function getArray()
-    {
-        return $this->array;
-    }
-
     private function merge($startIndex, $middleIndex, $endIndex)
     {
         $leftStack = array_slice($this->array, $startIndex, ($middleIndex + 1) - $startIndex);

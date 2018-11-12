@@ -1,10 +1,25 @@
 <?php
 
+function evaluateAlgorithm(Sort $algorithm)
+{
+    echo "\n" . get_class($algorithm);
+
+    echo "\n - Sort reversed array: " . getRunningTime($algorithm);
+    echo $algorithm->isSorted() ? " - Is sorted." : " - Not sorted.";
+
+    $newArray = $algorithm->getArray();
+    shuffle($newArray);
+    $algorithm->setArray($newArray);
+    echo "\n - Sort shuffled array: " . getRunningTime($algorithm);
+    echo $algorithm->isSorted() ? " - Is sorted." : " - Not sorted.";
+
+    echo "\n - Sort already sorted: " . getRunningTime($algorithm);
+    echo $algorithm->isSorted() ? " - Is sorted." : " - Not sorted.";
+}
+
 function getRunningTime($algorithm)
 {
     $startTime = time();
-
-    echo "\n" . get_class($algorithm);
 
     $algorithm->run();
 
@@ -12,8 +27,5 @@ function getRunningTime($algorithm)
 
     $totalTimeInSeconds = $endTime - $startTime;
 
-    echo "\n{$totalTimeInSeconds} seconds\n";
-
-    print_r(array_slice($algorithm->getArray(), 0, 3));
-    print_r(array_slice($algorithm->getArray(), count($algorithm->getArray()) - 3, 3));
+    return "{$totalTimeInSeconds} seconds";
 }

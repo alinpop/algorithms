@@ -8,6 +8,5 @@ for ($i = 30000; $i >=0; $i--) {
     $array[] = $i;
 }
 
-
-echo getRunningTime(new InsertionSort($array));
-echo getRunningTime(new MergeSort($array));
+evaluateAlgorithm(new InsertionSort($array));
+evaluateAlgorithm(new MergeSort($array));

@@ -1,19 +1,7 @@
 <?php
 
-class InsertionSort
+class InsertionSort extends Sort
 {
-    private $array = [];
-
-    public function __construct(array $array)
-    {
-        $this->array = $array;
-    }
-
-    public function getArray()
-    {
-        return $this->array;
-    }
-
     public function run()
     {
         for ($currentIndex = 1; $currentIndex < count($this->array); $currentIndex++) {
