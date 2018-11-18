@@ -6,7 +6,7 @@ abstract class Sort
 
     public function __construct(array $array)
     {
-        $this->array = $array;
+        $this->array = array_values($array);
     }
 
     public function getArray()

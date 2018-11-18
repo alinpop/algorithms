@@ -10,3 +10,4 @@ for ($i = 30000; $i >=0; $i--) {
 
 evaluateAlgorithm(new InsertionSort($array));
 evaluateAlgorithm(new MergeSort($array));
+evaluateAlgorithm(new BubbleSort($array));
