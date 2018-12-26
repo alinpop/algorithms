@@ -3,11 +3,16 @@
 include 'helpers.php';
 include 'autoload.php';
 
+$arraySize = 30000;
+
 $array = [];
-for ($i = 30000; $i >=0; $i--) {
+for ($i = $arraySize; $i >=0; $i--) {
     $array[] = $i;
 }
+
+echo 'ARRAY SIZE: ' . number_format($arraySize) . "\n";
 
 evaluateAlgorithm(new InsertionSort($array));
 evaluateAlgorithm(new MergeSort($array));
 evaluateAlgorithm(new BubbleSort($array));
+evaluateAlgorithm(new QuickSort($array));
