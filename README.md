@@ -8,19 +8,22 @@ Some common algorithms translated into PHP.
 ## Results
 Array size: 30.000.
 - InsertionSort
-  - Sort reversed array: 53 seconds - Is sorted.
-  - Sort shuffled array: 29 seconds - Is sorted.
+  - Sort reversed array: 6 seconds - Is sorted.
+  - Sort shuffled array: 3 seconds - Is sorted.
   - Sort already sorted: 0 seconds - Is sorted.
 - MergeSort
-  - Sort reversed array: 2 seconds - Is sorted.
-  - Sort shuffled array: 1 seconds - Is sorted.
-  - Sort already sorted: 1 seconds - Is sorted.
-- BubbleSort
-  - Sort reversed array: 105 seconds - Is sorted.
-  - Sort shuffled array: 69 seconds - Is sorted.
-  - Sort already sorted: 38 seconds - Is sorted.
-- QuickSort
-  - Sort reversed array: 69 seconds - Is sorted.
+  - Sort reversed array: 0 seconds - Is sorted.
   - Sort shuffled array: 0 seconds - Is sorted.
-  - Sort already sorted: 123 seconds - Is sorted.
-  
+  - Sort already sorted: 0 seconds - Is sorted.
+- BubbleSort
+  - Sort reversed array: 11 seconds - Is sorted.
+  - Sort shuffled array: 7 seconds - Is sorted.
+  - Sort already sorted: 4 seconds - Is sorted.
+- QuickSort
+  - Sort reversed array: 8 seconds - Is sorted.
+  - Sort shuffled array: 0 seconds - Is sorted.
+  - Sort already sorted: 13 seconds - Is sorted.
+- HeapSort
+  - Sort reversed array: 0 seconds - Is sorted.
+  - Sort shuffled array: 0 seconds - Is sorted.
+  - Sort already sorted: 0 seconds - Is sorted.

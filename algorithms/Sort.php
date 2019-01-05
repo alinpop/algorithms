@@ -4,6 +4,8 @@ abstract class Sort
 {
     protected $array = [];
 
+    abstract public function run();
+
     public function __construct(array $array)
     {
         $this->array = array_values($array);
@@ -27,5 +29,10 @@ abstract class Sort
         return $this->array === $nativeSort;
     }
 
-    abstract public function run();
+    protected function exchangeValues($firstIndex, $secondIndex)
+    {
+        $firstValue = $this->array[$firstIndex];
+        $this->array[$firstIndex] = $this->array[$secondIndex];
+        $this->array[$secondIndex] = $firstValue;
+    }
 }

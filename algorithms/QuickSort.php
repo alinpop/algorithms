@@ -32,10 +32,4 @@ class QuickSort extends Sort
         return $exchangeValuesIndex;
     }
 
-    private function exchangeValues($firstIndex, $secondIndex)
-    {
-        $firstValue = $this->array[$firstIndex];
-        $this->array[$firstIndex] = $this->array[$secondIndex];
-        $this->array[$secondIndex] = $firstValue;
-    }
 }
